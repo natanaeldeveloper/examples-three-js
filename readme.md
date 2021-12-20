@@ -18,7 +18,9 @@
 
 ## Instalação
 ```JS
-npm install && npm
+git clone https://github.com/natanael-oliveira/examples-three-js.git
+cd examples-three-js
+npm install
 ```
 
 ## Executar projeto
