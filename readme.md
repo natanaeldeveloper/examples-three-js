@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="dist/three.png">
+    <img src="docs/three.png">
 </p>
 <h2 align="center">Examples three.js</h2>
 <hr>
