@@ -11,6 +11,6 @@ let mix = require('webpack-mix');
  |
  */
 
-mix.setPublicPath('dist')
-    .js('src/example01.js', 'dist/example01/scripts.js')
-    .js('src/example02.js', 'dist/example02/scripts.js')
+mix.setPublicPath('docs')
+    .js('src/example01.js', 'docs/example01/scripts.js')
+    .js('src/example02.js', 'docs/example02/scripts.js')
