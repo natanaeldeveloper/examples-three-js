@@ -4,7 +4,7 @@
 <h2 align="center">Examples three.js</h2>
 <hr>
 
-#### Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. [documentação do three.js](https://github.com/mrdoob/three.js)
+#### Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. [demo do projeto](https://natanael-oliveira.github.io/examples-three-js/) 
 
 
 ## Objetivo
@@ -28,3 +28,5 @@ npm install
 npm hot //open browser localhost:8080
 ```
 ![demo](demo.gif)
+
+### Para mais informações consulte a  [documentação](https://github.com/mrdoob/three.js) do three.js 
