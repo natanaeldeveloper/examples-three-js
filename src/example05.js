@@ -8,9 +8,6 @@ let scene, camera, renderer, controls, loader, pmremGenerator;
 scene = new THREE.Scene();
 scene.background = new THREE.Color(0xFFFFFF);
 
-pmremGenerator = new THREE.PMREMGenerator(renderer);
-scene.environment = pmremGenerator.fromScene(new RoomEnvironment(), 0).texture;
-
 camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
 camera.position.set(0, 0, 10);
 
@@ -21,6 +18,9 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 0.8;
 renderer.outputEncoding = THREE.sRGBEncoding;
 document.body.appendChild(renderer.domElement);
+
+pmremGenerator = new THREE.PMREMGenerator(renderer);
+scene.environment = pmremGenerator.fromScene(new RoomEnvironment(), 0).texture;
 
 controls = new OrbitControls(camera, renderer.domElement);
 controls.update();
