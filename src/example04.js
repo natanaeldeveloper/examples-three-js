@@ -1,7 +1,7 @@
 import * as THREE from 'three/build/three.module';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { RoughnessMipmapper } from 'three/examples/jsm/utils/RoughnessMipmapper.js';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 
 
 const scene = new THREE.Scene();
@@ -12,6 +12,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputEncoding = THREE.sRGBEncoding;
 document.body.appendChild(renderer.domElement);
 
+const pmremGenerator = new THREE.PMREMGenerator(renderer);
+scene.environment = pmremGenerator.fromScene(new RoomEnvironment(), 0).texture;
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
 camera.position.set(5, 5, 5);
@@ -21,20 +23,8 @@ controls.update();
 
 const loader = new GLTFLoader().setPath('porsche/');
 
-const roughnessMipmapper = new RoughnessMipmapper(renderer);
-
 loader.load('scene.gltf', function (gltf) {
-    const model = gltf.scene;
-    model.traverse(function (child) {
-
-        if (child.isMesh) {
-            roughnessMipmapper.generateMipmaps(child.material);
-        }
-    });
-
-    roughnessMipmapper.dispose();
-    scene.add(model);
-
+    scene.add(gltf.scene);
     animate();
 
 }, undefined, function (err) {
