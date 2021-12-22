@@ -1,4 +1,6 @@
 {
     "/example01/scripts.js": "/example01/scripts.js",
-    "/example02/scripts.js": "/example02/scripts.js"
+    "/example02/scripts.js": "/example02/scripts.js",
+    "/example03/scripts.js": "/example03/scripts.js",
+    "/example04/scripts.js": "/example04/scripts.js"
 }

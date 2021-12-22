@@ -14,3 +14,5 @@ let mix = require('webpack-mix');
 mix.setPublicPath('docs')
     .js('src/example01.js', 'docs/example01/scripts.js')
     .js('src/example02.js', 'docs/example02/scripts.js')
+    .js('src/example03.js', 'docs/example03/scripts.js')
+    .js('src/example04.js', 'docs/example04/scripts.js')
