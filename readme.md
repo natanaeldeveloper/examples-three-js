@@ -23,10 +23,10 @@ cd examples-three-js
 npm install
 ```
 
-## Executar projeto
+## Executar projeto localmente
 ```jS
 npm hot //open browser localhost:8080
 ```
-[demo do projeto](https://natanael-oliveira.github.io/examples-three-js/) 
+<em>Você também pode visualizar esse projeto em execução clicando [aqui](https://natanael-oliveira.github.io/examples-three-js/)</em>
 
 ![demo](demo.gif)
