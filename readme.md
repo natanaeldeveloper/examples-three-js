@@ -29,4 +29,4 @@ npm hot //open browser localhost:8080
 ```
 <em>Você também pode visualizar esse projeto em execução clicando [aqui](https://natanael-oliveira.github.io/examples-three-js/)</em>
 
-![demo](demo.gif)
+![demo](demo2.gif)
