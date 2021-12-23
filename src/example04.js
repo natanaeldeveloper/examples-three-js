@@ -27,7 +27,9 @@ loader.load('scene.gltf', function (gltf) {
     scene.add(gltf.scene);
     animate();
 
-}, undefined, function (err) {
+}, function(xhr){
+    console.log(xhr);
+}, function (err) {
 
     console.error(err);
 });
